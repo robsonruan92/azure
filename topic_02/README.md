@@ -3,9 +3,9 @@
 This repository contains scripts to automate the backup and restore process for an Azure SQL Database using Azure CLI and Bash scripting.
 
 ## Prerequisites
-- Azure CLI installed
+- **[Azure CLI Step-by-step installation](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-2-step-by-step-installation-instructions)**
 - Logged in to Azure CLI (`az login`)
-- Azure SQL Database and Storage Account already created
+- Azure SQL Database and Storage Account already created (you can check ![](topic_01/) to configure a Azure SQL)
 
 ## 1. Backup Process
 The `db_backup.sh` script schedules regular backups for an Azure SQL Database and stores them in a specified Azure Storage Account.
