@@ -17,11 +17,11 @@ variable "web_vm_name" {
 }
 
 variable "web_vms_size" {
-  default = "Standard_DS1_v2"
+  default = " Dv5-series"
 }
 
 variable "app_vms_size" {
-  default = "Standard_DS2_v2"
+  default = " Dv5-series"
 }
 
 variable "vm_admin_username" {
@@ -67,7 +67,7 @@ variable "mssql_db_collation" {
 }
 
 variable "mssql_license_type" {
-  default = "LicenseIncluded"
+  default = "BasePrice"
 }
 
 variable "mssql_sku_name" {
