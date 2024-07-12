@@ -13,17 +13,16 @@
 
 # Solution:
 
-- Created a modular **terraform** script where you can:
-
+- 
     - !
     - !
     - !
 
-    - **[Infracost](https://www.infracost.io/)** before deploying anything:
-    ![](images/azure_infra_costs.png)
+- Estimated cost of adding resources using **[Infracost](https://www.infracost.io/)**:
+![](images/azure_infra_costs.png)
 
 - Hand-drawn diagram by **Drawio**:
-![](images/azure_infra_costs.png)
+![](images/azure_infra_architecture.png)
 
 - Resources in **Azure Portal**:
 ![](images/azure_infra_portal.png)
