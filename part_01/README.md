@@ -13,10 +13,20 @@
 
 # Solution:
 
-- 
-    - !
-    - !
-    - !
+With regard to the network in general, the following have been configured: 
+
+- VNet with the appropriate subnets 
+- Network Security Groups (NSGs) and Association of NSGs
+
+Configure the following resources separately:
+
+- VMs and Load Balancer at Web Level
+- VM at the Application Level
+- Azure SQL Database at Database Level
+
+They already have separate files and use variables to make the code more dynamic and easier to change.
+
+## Images:
 
 - Estimated cost of adding resources using **[Infracost](https://www.infracost.io/)**:
 ![](images/azure_infra_costs.png)
