@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "resource_group" {
-  default = "main-resource-group"
+  default = "project-resource-group"
 }
 
 # vm (web & application) # 
@@ -17,11 +17,11 @@ variable "web_vm_name" {
 }
 
 variable "web_vms_size" {
-  default = "Dv5-series"
+  default = "Standard_DS1_v2"
 }
 
 variable "app_vms_size" {
-  default = "Dv5-series"
+  default = "Standard_DS2_v2"
 }
 
 variable "vm_admin_username" {
@@ -47,7 +47,7 @@ variable "mssql_admin_password" {
 }
 
 variable "mssql_server_name" {
-  default = "sql-server"
+  default = "project-sql-server001"
 }
 
 variable "mssql_server_version" {
@@ -67,7 +67,7 @@ variable "mssql_db_collation" {
 }
 
 variable "mssql_license_type" {
-  default = "BasePrice"
+  default = "LicenseIncluded"
 }
 
 variable "mssql_sku_name" {
