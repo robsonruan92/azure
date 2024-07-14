@@ -2,10 +2,6 @@ variable "region" {
   default = "Brazil South"
 }
 
-variable "resource_group" {
-  default = "project-resource-group"
-}
-
 # vm (web & application) # 
 
 variable "app_vm_name" {
@@ -17,11 +13,11 @@ variable "web_vm_name" {
 }
 
 variable "web_vms_size" {
-  default = " Dv5-series"
+  default = "Standard_B1s"
 }
 
 variable "app_vms_size" {
-  default = " Dv5-series"
+  default = "Standard_B1s"
 }
 
 variable "vm_admin_username" {
@@ -46,16 +42,8 @@ variable "mssql_admin_password" {
   sensitive   = true
 }
 
-variable "mssql_server_name" {
-  default = "project-sql-server001"
-}
-
 variable "mssql_server_version" {
   default = "12.0"
-}
-
-variable "mssql_db_name" {
-  default = "sql-db"
 }
 
 variable "mssql_db_edition" {
