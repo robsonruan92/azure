@@ -26,6 +26,9 @@ Configure the following resources separately:
 
 They already have separate files and use variables to make the code more dynamic and easier to change.
 
+
+### If you have a problem removing it, just run the destroy command one more time.
+
 ## Images:
 
 - Estimated cost of adding resources using **[Infracost](https://www.infracost.io/)**:

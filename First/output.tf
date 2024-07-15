@@ -17,3 +17,7 @@ output "azurerm_mssql_server" {
 output "azurerm_mssql_database" {
   value = azurerm_mssql_database.mssql_database.name
 }
+
+output "azurerm_storage_container" {
+  value = azurerm_storage_container.storage_container.name
+}
