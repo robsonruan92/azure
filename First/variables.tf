@@ -62,9 +62,16 @@ variable "mssql_sku_name" {
   default = "Basic"
 }
 
+variable "enable_storage_management_policy" {
+  description = "Flag to enable storage management policy"
+  type        = bool
+  default     = false
+}
+
+
 variable "tags" {
   default = {
-    Environment = "Production"
+    Environment = "Prod"
     Description = "Velozient"
   }
 }

@@ -10,6 +10,12 @@ resource "random_string" "storage_name" {
   upper   = false
 }
 
+resource "random_string" "container_storage_name" {
+  length  = 10
+  special = false
+  upper   = false
+}
+
 resource "azurerm_resource_group" "velozient_resource_group" {
 
   name                      = "${random_string.resource_group_name.result}"
@@ -28,4 +34,10 @@ resource "azurerm_storage_account" "storage_account" {
   account_replication_type  = "LRS"
 
   tags                      = var.tags
+}
+
+resource "azurerm_storage_container" "storage_container" {
+  name                  = "${random_string.container_storage_name.result}"
+  storage_account_name  = azurerm_storage_account.storage_account.name
+  container_access_type = "private"
 }
